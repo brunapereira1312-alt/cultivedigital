@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultive Digital</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0B3D2E;
+      --secondary: #2E7D32;
+      --light: #F8FAF9;
+      --gray: #6B7280;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--light);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    h1,h2,h3 { font-family: 'Poppins', sans-serif; }
+
+    header {
+      display:flex;
+      justify-content:center;
+      padding:24px;
+      background:white;
+      border-bottom:1px solid #eee;
+    }
+
+    header img {
+      height:50px;
+    }
+
+    .hero {
+      text-align:center;
+      padding:100px 20px;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(46,125,50,0.05), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(46,125,50,0.05), transparent 40%);
+    }
+
+    .hero h1 {
+      font-size:42px;
+      margin-bottom:16px;
+    }
+
+    .hero p {
+      color:var(--gray);
+      max-width:600px;
+      margin:auto;
+      margin-bottom:30px;
+    }
+
+    .btn {
+      background:var(--primary);
+      color:white;
+      padding:14px 28px;
+      border-radius:12px;
+      text-decoration:none;
+      display:inline-block;
+    }
+
+    .section {
+      padding:80px 20px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .section h2 {
+      margin-bottom:20px;
+      font-size:28px;
+    }
+
+    .text {
+      color:var(--gray);
+      max-width:700px;
+    }
+
+    .grid {
+      display:grid;
+      gap:20px;
+      margin-top:30px;
+    }
+
+    @media(min-width:768px){
+      .grid { grid-template-columns: repeat(2,1fr); }
+    }
+
+    .card {
+      background:white;
+      padding:28px;
+      border-radius:16px;
+      border:1px solid #f1f5f9;
+      box-shadow:0 8px 20px rgba(0,0,0,0.04);
+    }
+
+    .card h3 {
+      margin-bottom:10px;
+    }
+
+    footer {
+      text-align:center;
+      padding:40px;
+      color:var(--gray);
+      font-size:14px;
+    }
+
+    /* WhatsApp */
+    .whatsapp {
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      color:white;
+      padding:14px 18px;
+      border-radius:50px;
+      text-decoration:none;
+      font-size:14px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" alt="Cultive Digital">
+</header>
+
+<section class="hero">
+  <h1>Eficiência não deveria ser um luxo</h1>
+  <p>
+    A Cultive Digital nasceu da necessidade real de organizar, automatizar e escalar atendimentos e negócios de forma simples, eficiente e sustentável.
+  </p>
+  <a href="#produtos" class="btn">Conhecer soluções</a>
+</section>
+
+<section class="section">
+  <h2>Origem</h2>
+  <p class="text">
+    A Cultive Digital surgiu a partir da vivência prática da médica Bruna Pereira, que enfrentava desafios reais na organização de atendimentos, acompanhamento de pacientes e gestão de contatos.
+    <br><br>
+    A falta de sistemas simples e eficientes gerava perda de oportunidades, retrabalho e dificuldade em manter consistência no acompanhamento.
+    <br><br>
+    A solução desenvolvida inicialmente para a área da saúde rapidamente se mostrou aplicável a outros negócios que enfrentam o mesmo problema: falta de organização e ausência de processos automatizados.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Transformação</h2>
+  <p class="text">
+    O que começou como uma necessidade individual evoluiu para uma solução estruturada capaz de aumentar eficiência, melhorar relacionamento com clientes e ampliar resultados em diferentes segmentos.
+    <br><br>
+    Hoje, a Cultive Digital atua criando sistemas simples, funcionais e estratégicos para empresas que desejam crescer com consistência.
+  </p>
+</section>
+
+<section class="section" id="produtos">
+  <h2>Soluções</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Sites profissionais</h3>
+      <p>
+        Desenvolvimento de sites estratégicos, com foco em posicionamento, clareza de comunicação e geração de oportunidades.
+        <br><br>
+        Estrutura pensada para transformar visitantes em contatos qualificados.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Sistema de recuperação de clientes (CRM)</h3>
+      <p>
+        Sistema simples de gestão de contatos e acompanhamento de clientes.
+        <br><br>
+        Permite organizar leads, registrar interações e garantir que nenhum cliente potencial seja perdido por falta de acompanhamento.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Automação de vendas</h3>
+      <p>
+        Estruturação de fluxos automáticos de contato e follow-up.
+        <br><br>
+        A comunicação deixa de depender de ações manuais e passa a acontecer de forma contínua e previsível.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Cultive Digital
+</footer>
+
+<a class="whatsapp" href="https://wa.me/55SEUNUMERO" target="_blank">
+  Falar no WhatsApp
+</a>
+
+</body>
+</html>
